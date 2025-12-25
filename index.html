@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YSS Coaching Centre</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>YSS Coaching Centre</h1>
+    <p>Learn • Enjoy • Grow</p>
+    <button type="button" onclick="openForm()">Enroll Now</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      We provide quality education for Class 6–12, competitive exams, and computer science courses. 
+      Our goal is to make you job-ready and help you crack competitive exams with confidence.
+    </p>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="course-container">
+      <div class="course-card" data-count="12">School Education</div>
+      <div class="course-card" data-count="8">Competitive Exams</div>
+      <div class="course-card" data-count="10">Computer Science</div>
+    </div>
+
+    <p id="course-info" class="course-info"></p>
+  </section>
+
+  <!-- Admission Form Popup -->
+  <div id="formPopup">
+    <form id="admissionForm">
+      <h2>Admission Form</h2>
+
+      <input type="text" id="name" placeholder="Student Name" required>
+      <input type="text" id="course" placeholder="Class / Course" required>
+      <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+      <button type="submit">Submit</button>
+      <button type="button" class="close-btn" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <!-- Contact / Footer -->
+  <footer id="contact">
+    <p>📞 7524916301</p>
+    <p>📍 Itaunja, Lucknow</p>
+  </footer>
+
+  <!-- Courses Photo Section -->
+  <section id="course-photos">
+    <div class="photos"></div>
+  </section>
+
+  <script src="1.js"></script>
+</body>
+</html>
